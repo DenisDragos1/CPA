@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vizualizare oferte</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vizualizare oferte</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Titlu</th>
+          <th>Descriere</th>
+          <th>Imagine</th>
+          <th>Categorie</th>
+          <th>Tip</th>
+          <th>Timp oferta</th>
+          <th>Castig oferta</th>
+          <th>Numar credite oferta</th>
+          <th>Platforma CPA</th>
+          <th>Link</th>
+          <th>Timp completare oferta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i<oferte.length; i++) { %>
+          <tr>
+            <td><%= oferte[i].titlu %></td>
+            <td><%= oferte[i].descriere %></td>
+            <td><%= oferte[i].imagine %></td>
+            <td><%= oferte[i].categorie %></td>
+            <td><%= oferte[i].tip %></td>
+            <td><%= oferte[i].timp_oferta %> minute</td>
+            <td><%= oferte[i].castig_oferta %> RON</td>
+            <td><%= oferte[i].numar_credite_oferta %></td>
+            <td><%= oferte[i].platforma_CPA %></td>
+            <td><%= oferte[i].link %></td>
+            <td><%= oferte[i].timp_completare_oferta %> minute</td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

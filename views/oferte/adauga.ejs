@@ -1,0 +1,74 @@
+
+    <title>Adauga Oferta</title>
+  
+    <div class="container">
+      <h1>Adauga Oferta</h1>
+      <%- if (message) { %>
+      <div class="message"><%-= message %></div>
+      <%- } %>
+      <form action="/adauga-oferta" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="titlu">Titlu:</label>
+          <input type="text" id="titlu" name="titlu" required />
+        </div>
+        <div class="form-group">
+          <label for="descriere">Descriere:</label>
+          <textarea id="descriere" name="descriere" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="categorie">Categorie:</label>
+          <select id="categorie" name="categorie" required>
+            <option value="afaceri">Afaceri</option>
+            <option value="educație">Educație</option>
+            <option value="finanțe">Finanțe</option>
+            <option value="jocuri">Jocuri</option>
+            <option value="muzică">Muzică</option>
+            <option value="sănătate">Sănătate</option>
+            <option value="sport">Sport</option>
+            <option value="alte">Alte categorii</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tip">Tip:</label>
+          <select id="tip" name="tip" required>
+            <option value="lead">Lead</option>
+            <option value="sale">Sale</option>
+            <option value="click">Click</option>
+            <option value="instalare">Instalare</option>
+            <option value="înregistrare">Înregistrare</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="timp-oferta">Timp oferta (minute):</label>
+          <input type="number" id="timp-oferta" name="timp-oferta" required />
+        </div>
+        <div class="form-group">
+          <label for="castig-oferta">Castig oferta:</label>
+          <input type="number" id="castig-oferta" name="castig-oferta" required />
+        </div>
+        <div class="form-group">
+          <label for="numar-maxim-credite">Numar maxim credite:</label>
+          <input type="number" id="numar-maxim-credite" name="numar-maxim-credite" required />
+        </div>
+        <div class="form-group">
+            <label for="numar-credite-oferta">Numar credite oferta:</label>
+            <input type="number" class="form-control" id="numar-credite-oferta" name="numar-credite-oferta" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="platforma-cpa">Platforma CPA:</label>
+            <input type="text" class="form-control" id="platforma-cpa" name="platforma-cpa" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="link">Link:</label>
+            <input type="text" class="form-control" id="link" name="link" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="timp-completare-oferta">Timp completare oferta (minute):</label>
+            <input type="number" class="form-control" id="timp-completare-oferta" name="timp-completare-oferta" required>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Adauga oferta</button>
+          

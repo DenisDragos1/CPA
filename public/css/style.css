@@ -1,0 +1,54 @@
+/* Stilul pentru toate butoanele din aplicație */
+button {
+    background-color: #4CAF50; /* culoarea fundalului */
+    border: none; /* eliminarea marginilor și a chenarelor */
+    color: white; /* culoarea textului */
+    padding: 15px 32px; /* dimensiunea de sus și de jos, respectiv dimensiunea stânga și dreapta */
+    text-align: center; /* alinierea textului */
+    text-decoration: none; /* eliminarea sublinierii textului */
+    display: inline-block; /* afișarea ca bloc */
+    font-size: 16px; /* dimensiunea fontului */
+    margin: 4px 2px; /* margini */
+    cursor: pointer; /* cursor de tip pointer la interacțiunea cu butonul */
+  }
+  
+  /* Stilul pentru câmpurile de intrare de text */
+  input[type=text], input[type=password] {
+    width: 100%; /* lățimea câmpului de intrare */
+    padding: 12px 20px; /* dimensiunea de sus și de jos, respectiv dimensiunea stânga și dreapta */
+    margin: 8px 0; /* margini */
+    box-sizing: border-box; /* dimensiunea totală a elementului (inclusiv marginile și chenarele) */
+  }
+  
+  /* Stilul pentru etichetele (label) câmpurilor de intrare */
+  label {
+    font-size: 20px; /* dimensiunea fontului */
+    font-weight: bold; /* tipul de font */
+  }
+  
+  /* Stilul pentru barele de navigare */
+  nav {
+    background-color: #333; /* culoarea fundalului */
+    overflow: hidden; /* eliminarea marginilor din bara de navigare */
+  }
+  
+  /* Stilul pentru legăturile din bara de navigare */
+  nav a {
+    float: left; /* alinierea la stânga */
+    color: white; /* culoarea textului */
+    text-align: center; /* alinierea textului */
+    padding: 14px 16px; /* dimensiunea de sus și de jos, respectiv dimensiunea stânga și dreapta */
+    text-decoration: none; /* eliminarea sublinierii textului */
+  }
+  
+  /* Stilul pentru legăturile active din bara de navigare */
+  nav a.active {
+    background-color: #4CAF50; /* culoarea fundalului */
+  }
+  
+  /* Stilul pentru legăturile la survolul din bara de navigare */
+  nav a:hover {
+    background-color: #ddd; /* culoarea fundalului */
+    color: black; /* culoarea textului */
+  }
+  
